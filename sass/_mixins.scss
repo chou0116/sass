@@ -1,13 +1,36 @@
-a {
+/*a {
     color: blue;
-}
+}*/
 
 @mixin border-box-stuff {
-    -webkit-boc-sizing: inherit;
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
-/*@mixin font_block($val1, $val2, $val3, $val4) {
-    font-size: $val1;
-    padding: $val2 $val3 $val4;
-}*/
+
+
+@mixin col_size($var1, $var2:1, $var3:0) {
+    flex-basis: $var1;
+    flex-grow: $var2;
+    flex-shrink: $var3;
+}
+
+
+
+@mixin medium {
+    @media all and (min-width: 701px) and (max-width:900px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media all and (min-width: 901px) and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin extra_large {
+    @media all and (min-width: 1401px) {
+        @content;
+    }
+}
