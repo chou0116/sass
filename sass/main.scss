@@ -59,57 +59,62 @@ ul {
                 LAYOUT
 ***********************************************/
 
-.bg-header {
-    background-color: $bg-color;
-    background-color: $color-light-blue;
-    color: $color-dark-grey;
-    border-bottom: 1rem solid $color-med-blue;
-    border-top: 1rem solid $color-dark-blue;
-    position: relative;
+.bg {
 
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        bottom: -1rem;
-        height: 1rem;
-        width: 30%;
-        background-color: $color-dark-blue;
+
+    &-header {
+        background-color: $bg-color;
+        background-color: $color-light-blue;
+        color: $color-dark-grey;
+        border-bottom: 1rem solid $color-med-blue;
+        border-top: 1rem solid $color-dark-blue;
+        position: relative;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -1rem;
+            height: 1rem;
+            width: 30%;
+            background-color: $color-dark-blue;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+
     }
 
-    &:before {
-        left: 0;
+
+
+    &-focal {
+        background-color: $color-light-brown;
+        color: $color-dark-brown;
     }
 
-    &:after {
-        right: 0;
+    &-content1 {
+        background-color: $bg-color;
+        color: $color-dark-grey;
+        font-weight: 100;
     }
 
+    &-content2 {
+        background-color: $color-light-blue;
+        color: $color-dark-blue;
+        font-weight: 100;
+    }
 
-}
+    &-footer {
+        background-color: $bg-color;
+        color: $color-light-grey;
+    }
 
-
-
-.bg-focal {
-    background-color: $color-light-brown;
-    color: $color-dark-brown;
-}
-
-.bg-content1 {
-    background-color: $bg-color;
-    color: $color-dark-grey;
-    font-weight: 100;
-}
-
-.bg-content2 {
-    background-color: $color-light-blue;
-    color: $color-dark-blue;
-    font-weight: 100;
-}
-
-.bg-footer {
-    background-color: $bg-color;
-    color: $color-light-grey;
 }
 
 header {
@@ -167,30 +172,33 @@ section.content2 {
     /* mobile default */
 }
 
-footer .row {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-footer .row > * {
-    flex-basis: 50%;
-    padding-bottom: 2rem;
-    border-left: 1px solid $color-dark-blue;
-    margin-bottom: 2rem;
-}
-
-footer .row.last-row > * {
-    flex-basis: 100%;
-}
-
-footer .row .col:first-child {
-    border-left: 0;
-}
-
 footer {
+
     padding: 2rem 0;
+
+    .row {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .row > * {
+        flex-basis: 50%;
+        padding-bottom: 2rem;
+        border-left: 1px solid $color-dark-blue;
+        margin-bottom: 2rem;
+    }
+
+    .row.last-row > * {
+        flex-basis: 100%;
+    }
+
+    .row .col:first-child {
+        border-left: 0;
+    }
+
+
 }
 
 /***********************************************
