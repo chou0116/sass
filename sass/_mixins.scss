@@ -8,13 +8,16 @@
 }
 
 
-
 @mixin col_size($var1, $var2:1, $var3:0) {
     flex-basis: $var1;
     flex-grow: $var2;
     flex-shrink: $var3;
 }
 
+@mixin para_layout($font-size, $padding-1, $padding-2, $padding-3) {
+    font-size: $font-size;
+    padding: $padding-1 $padding-2 $padding-3;
+}
 
 
 @mixin medium {

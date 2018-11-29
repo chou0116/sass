@@ -207,25 +207,29 @@ footer {
                 NAVIGATION
 ***********************************************/
 
-header nav {}
+header nav {
 
-header nav > a {
-    text-align: center;
-    text-decoration: none;
-    color: $color-dark-grey;
-    font-size: 1.414rem;
-    letter-spacing: 0.25rem;
-    border: 1px solid $color-light-grey;
-    border-bottom: none;
-    padding: 1.0rem 2rem;
-    line-height: 1;
-    background-color: $bg-color;
+    > a {
+        text-align: center;
+        text-decoration: none;
+        color: $color-dark-grey;
+        font-size: 1.414rem;
+        letter-spacing: 0.25rem;
+        border: 1px solid $color-light-grey;
+        border-bottom: none;
+        padding: 1.0rem 2rem;
+        line-height: 1;
+        background-color: $bg-color;
+
+        &:hover {
+            font-weight: 700;
+            color: $color-dark-brown;
+        }
+    }
+
 }
 
-header nav > a:hover {
-    font-weight: 700;
-    color: $color-dark-brown;
-}
+
 
 /***********************************************
                 CONTENT
@@ -263,13 +267,11 @@ header h1 i.fa-lg ~ span {
 }
 
 .focal .author {
-    font-size: 1rem;
-    padding: 0.2rem 2rem 2rem;
+    @include para_layout(1rem, 0.2rem, 2rem, 2rem);
 }
 
 .content1 h3 {
-    font-size: 1.999rem;
-    padding: 0.2rem 2rem 2rem;
+    @include para_layout(1.999rem, 0.2rem, 2rem, 2rem);
 }
 
 .content1 h3 i {
@@ -278,23 +280,19 @@ header h1 i.fa-lg ~ span {
 }
 
 .content1 p {
-    font-size: 1.414rem;
-    padding: 0.5rem 2rem 1rem;
+    @include para_layout(1.414rem, 0.5rem, 2rem, 1rem);
 }
 
 .content2 h3 {
-    font-size: 1.999rem;
-    padding: 1rem 2rem 0.5rem;
+    @include para_layout(1.999rem, 1rem, 2rem, 0.5rem);
 }
 
 .content2 h4 {
-    font-size: 1.999rem;
-    padding: 1rem 2rem 0rem;
+    @include para_layout(1.999rem, 1rem, 2rem, 0rem);
 }
 
 .content2 p {
-    font-size: 1.414rem;
-    padding: 0.5rem 2rem 1rem;
+    @include para_layout(1.414rem, 0.5rem, 2rem, 1rem);
 }
 
 .content2 li {
