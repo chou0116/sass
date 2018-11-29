@@ -1,12 +1,4 @@
 @charset "UTF-8";
-html {
-  font-size: 16px;
-  font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
-  /* default for whole page */
-  line-height: 1.6;
-  font-weight: 400;
-}
-
 /*a {
     color: blue;
 }*/
@@ -33,6 +25,14 @@ dark grey   #222
 *:after, *:before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
+  /* default for whole page */
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 h1,

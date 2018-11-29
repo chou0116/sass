@@ -31,7 +31,11 @@ dark grey   #222
 
 
 html {
-    @extend %html;
+    font-size: 16px;
+    font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
+    /* default for whole page */
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 h1,
