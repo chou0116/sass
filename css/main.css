@@ -22,9 +22,7 @@ dark grey   #222
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-*:after,
-*:before {
+*:after, *:before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }

@@ -20,15 +20,15 @@ dark grey   #222
 * {
     padding: 0;
     margin: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    @include border-box-stuff(border-box);
+
+    &:after,
+    &:before {
+        @include border-box-stuff(inherit);
+    }
 }
 
-*:after,
-*:before {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
+
 
 html {
     font-size: 16px;
@@ -145,6 +145,8 @@ header nav > a {
     flex-shrink: 0;
     text-align: center;
 }
+
+
 
 section.focal {
     width: 400px;
