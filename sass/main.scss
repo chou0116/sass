@@ -25,17 +25,13 @@ dark grey   #222
     &:after,
     &:before {
         @include border-box-stuff(inherit);
+
     }
 }
 
 
-
 html {
-    font-size: 16px;
-    font-family: $main-font-family;
-    /* default for whole page */
-    line-height: 1.6;
-    font-weight: 400;
+    @extend %html;
 }
 
 h1,
