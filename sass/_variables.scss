@@ -20,17 +20,7 @@ $header-font-family: Cardo,
 Palatino,
 serif;
 
-%all {
-    padding: 0;
-    margin: 0;
-    @include border-box-stuff(border-box);
 
-    &:after,
-    &:before {
-        @include border-box-stuff(inherit);
-
-    }
-}
 
 %html1 {
     font-size: 16px;
