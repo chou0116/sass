@@ -31,11 +31,7 @@ dark grey   #222
 
 
 html {
-    font-size: 16px;
-    font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
-    /* default for whole page */
-    line-height: 1.6;
-    font-weight: 400;
+    @extend %html1;
 }
 
 h1,
@@ -140,10 +136,7 @@ header nav {
 }
 
 header nav > a {
-    flex-basis: 100%;
-    flex-grow: 1;
-    flex-shrink: 0;
-    text-align: center;
+    @extend %header_nav;
 }
 
 

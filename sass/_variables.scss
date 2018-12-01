@@ -19,3 +19,30 @@ $header-font-family: Cardo,
 ‘Book Antiqua’,
 Palatino,
 serif;
+
+%all {
+    padding: 0;
+    margin: 0;
+    @include border-box-stuff(border-box);
+
+    &:after,
+    &:before {
+        @include border-box-stuff(inherit);
+
+    }
+}
+
+%html1 {
+    font-size: 16px;
+    font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
+    /* default for whole page */
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+%header_nav {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: center;
+}
